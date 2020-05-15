@@ -17,11 +17,21 @@
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $err;
+  transition-duration: 1.5s;
+}
+
+.error:hover {
+  background-color: lighten($err, 15%);
 }
 
 .info {
-  background-color: #927bc1;
+  background-color: $info;
+  transition-duration: 1s;
+}
+
+.info:hover {
+  background-color: darken($info, 15%);
 }
 
 .success {
